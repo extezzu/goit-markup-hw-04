@@ -82,6 +82,7 @@ section {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-wrapper {
@@ -112,20 +113,38 @@ section {
 
 .nav-link {
     display: block;
+    position: relative;
 
     padding-top: 24px;
     padding-bottom: 24px;
 
     font-weight: 500;
-  font-size: 16px;
+    font-size: 16px;
     line-height: 1.5;
-  letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
 
-  color: #2e2f42;
+    color: #2e2f42;
 }
 .nav-link:hover,
 .nav-link:focus {
     color: #404bbf;
+}
+
+.nav-link.current {
+    position: relative;
+    color: #404bbf;
+}
+
+.nav-link.current::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -157,9 +176,13 @@ section {
 /* ======================== section-business #1 === */
 
 .section-business {
-    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url("../images/business-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 188px 0;
 }
+
 
 .business-title {
     margin: 0 auto 48px;
