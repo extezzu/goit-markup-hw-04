@@ -183,11 +183,13 @@ section {
 /* ======================== section-business #1 === */
 
 .section-business {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url("../images/business-bg.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/business-bg.jpg");
+    max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 188px 0;
+    margin: 0 auto;
 }
 
 
@@ -206,27 +208,21 @@ section {
 
 .business-button {
     display: block;
-
     margin: 0 auto;
     padding: 16px 32px;
-
     min-width: 169px;
     height: 56px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
     cursor: pointer;
-
     border-radius: 4px;
     border: none;
-
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-
     color: #ffffff;
     background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .business-button:active, .business-button:focus {
