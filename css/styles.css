@@ -359,11 +359,6 @@ section {
     overflow: hidden;
 }
 
-.portfolio-banner {
-    position: relative;
-    overflow: hidden;
-}
-
 .portfolio-banner-text {
     position: absolute;
     top: 0;
