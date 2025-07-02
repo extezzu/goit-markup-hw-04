@@ -413,11 +413,9 @@ section {
 .footer-wrapper {
     display: flex;
     align-items: baseline;
-}
-
-.footer-info {
     margin-right: 120px;
 }
+
 
 .footer-logo {
     display: inline-block;
